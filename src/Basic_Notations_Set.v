@@ -5,6 +5,8 @@ Require Import Logic.IndefiniteDescription.
 Require Import Logic.ProofIrrelevance.
 Require Import Logic.ClassicalChoice.
 
+(** xxxx 2025/05/01 14:24 **)
+
 (** %
 \section{定義}
 この章では, 関係を集合論的に定義した場合の定義, およびその定義で諸公理が成立することを示す. 公理名や記号などは \verb|Basic_Notations| と同じものを使用する.
