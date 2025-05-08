@@ -13,13 +13,13 @@
         }
       }
     },
-    "image":"mathcomp/mathcomp:1.19.0-coq-8.20",
-    // "build": {
-    //   "dockerfile": "Dockerfile"
-    // },
+    // "image":"mathcomp/mathcomp:1.19.0-coq-8.20",
+    "build": {
+       "dockerfile": "Dockerfile"
+    },
 
-    "postCreateCommand": "opam init -y && eval $(opam env) && opam repo add coq-released https://coq.inria.fr/opam/released && opam install coq-mathcomp-ssreflect.1.19.0 -y && opam install vscoq-language-server -y && coq_makefile -f _CoqProject -o Makefile && make",
-    "remoteUser": "vscode", // ユーザー名を指定
-    "workspaceFolder": "/workspaces/CoqSticker", // コードが格納されるディレクトリ
-    "shutdownAction": "none" // コンテナ終了時のアクション設定
+    // "postCreateCommand": "opam init -y && eval $(opam env) && opam repo add coq-released https://coq.inria.fr/opam/released && opam install coq-mathcomp-ssreflect.1.19.0 -y && opam install vscoq-language-server -y && coq_makefile -f _CoqProject -o Makefile && make",
+    // "remoteUser": "vscode", // ユーザー名を指定
+    // "workspaceFolder": "/workspaces/CoqSticker", // コードが格納されるディレクトリ
+    // "shutdownAction": "none" // コンテナ終了時のアクション設定
   }
