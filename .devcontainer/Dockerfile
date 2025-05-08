@@ -9,16 +9,16 @@ MAINTAINER Karl Palmskog <palmskog@gmail.com>
 # https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/:
 #  * Put "apt-get update" and "apt-get install" in the same RUN command.
 #  * Do not run "apt-get upgrade"; instead get upstream to update.
-RUN apt-get -qqy update
-#\
-#&& apt-get -qqy install \
-#  software-properties-common \
-#  git \
-#  make \
-#  m4 \
-#  aspcud \
-#  ocaml \
-#  opam \
+# RUN apt-get -qqy update
+# \
+# && apt-get -qqy install \
+# software-properties-common \
+# git \
+# make \
+# m4 \
+# aspcud \
+# ocaml \
+# opam \
 #&& apt-get clean \
 #&& rm -rf /var/lib/apt/lists/* \
 #&& opam init --compiler=4.05.0 --yes --auto-setup \
