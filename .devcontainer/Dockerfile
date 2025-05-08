@@ -1,5 +1,6 @@
 # Use the official Ubuntu 22.04 base image
-FROM ubuntu:22.04
+# FROM ubuntu:22.04
+FROM ubuntu:xenial
 
 # Set the timezone to Asia/Tokyo
 RUN apt-get update
